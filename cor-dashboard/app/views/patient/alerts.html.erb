@@ -1,0 +1,26 @@
+<div id="alertsdiv" class="col-sm-12">
+	<h2 class="col-sm-offset-1" style="font-weight: lighter">Alerts and Notifications</h2>
+	<ul>
+		<% @alerts.each do |a| %>
+			<li> 			
+				<%= render :partial => 'patient/alert', :locals => {alert: a} %>		
+			</li>
+		<% end %>
+	</ul>
+	<script>
+	// When we click on the a
+	$("a").removeClass("active");
+	$("#myalerts a").css("padding-bottom","51px");
+	$("#myalerts a").css("box-shadow","none");
+	$("#myalerts a").css("border-radius","3px 3px 0 0");
+	// $("nav a")(function(){
+	//   // If this isn't already active
+	//   // if (!$(this).hasClass("active")) {
+	//   // 	$(this).addClass("active");
+	//     // Remove the class from anything that is active
+	//     $("a").removeClass("active");
+	//   //   // And make this active
+	//     $("#myalerts").addClass("active");
+	// });
+	</script>
+</div>

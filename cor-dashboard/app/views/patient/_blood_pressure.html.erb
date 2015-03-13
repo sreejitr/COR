@@ -1,0 +1,16 @@
+<%= javascript_tag do %>
+	var systolicHigh = <%= threshold[:systolic][:high] %>;
+	var systolicLow = <%= threshold[:systolic][:low] %>;		
+	var diastolicHigh = <%= threshold[:diastolic][:high] %>;
+	var diastolicLow = <%= threshold[:diastolic][:low] %>;
+	
+	var timestamp = <%= values[0] %>;
+	var systolicReading = <%= values[1] %>;
+	var diastolicReading = <%= values[2] %>;
+<% end %>
+
+<div id="blood_pressure_container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+  $(populate_blood_pressure_container());
+</script>
+<% javascript_include_tag "blood_pressure"%>

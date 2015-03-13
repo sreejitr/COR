@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  bp_sensor_id: 1
+  systolic_bp: 1
+  diastolic_bp: 1
+  reading_time: 2014-03-29 20:05:46
+  created_date: 2014-03-29 20:05:46
+
+two:
+  patient_id: 1
+  bp_sensor_id: 1
+  systolic_bp: 1
+  diastolic_bp: 1
+  reading_time: 2014-03-29 20:05:46
+  created_date: 2014-03-29 20:05:46

@@ -1,0 +1,125 @@
+// Place all the styles related to the Patient controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #fff;
+}
+
+.navbar-header {
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.active {
+	padding-bottom: 51px !important;
+	box-shadow: none !important;
+	border-radius: 3px 3px 0 0 !important;
+}
+
+#alerts .col-sm-10.col-sm-offset-1 {
+	height: 12em;
+	background-color: #d3a296;
+	border-radius: 3px;
+}
+
+#alerts .col-sm-6 {
+	background-color: #a8452d;
+	border-radius: 20px;
+	border: 2px solid #D41919;
+	height: 7em;
+}
+
+#alerts .col-sm-1{
+	margin-top: 4em;	
+}
+
+p.thick {
+	font-weight: bold;
+}
+
+#alertsdiv li {
+	margin-top: 2em;
+}
+
+#alertsdiv {
+	margin-top: 10em;
+}
+
+.navbar .bar {
+	margin-top: -0.75em;
+	height: 1em;
+	background-color: #d5853c;
+	box-shadow: 0px 5px #c37235;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.navbar {
+	height: 10em;
+}
+
+#metric-nav ul .btn-default {
+	background-color: #234e73;
+	border: none;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: -20px;
+	box-shadow: 0px 3px #1a4169;
+}
+
+.navbar {
+	box-shadow: 0 0 15px #fff;
+	padding-top: 0.3em;
+	background-color: #e9e2dd
+}
+
+#metric-nav {
+	margin-top: 10em;
+}
+
+.row .nav {
+	height: 10em;
+}
+
+.row .nav .col-sm-2 {
+	height: 10em;
+}
+
+.row .nav .col-sm-2 a {
+	padding: 40px 10px;
+	margin-top: 5px;
+	background-color: #d5853c;
+	color: #fff;
+	font-size: 24px;
+	border-radius: 3px;
+	box-shadow: 0px 5px #c37235;
+
+}
+
+.row .nav .col-sm-2 a:hover {
+	background-color: #d59c68;
+}
+
+.w75 {
+	width: 75%;
+}
+
+.border-r {
+	border-radius: 4px;
+	height: 50px;
+}
+
+.btn-spacing {
+	margin-top: 1em;
+	line-height: 35px;
+}
+

@@ -1,0 +1,230 @@
+.navbar-header {
+  margin: 0 auto;
+}
+
+#patient-container {
+  margin-top: 0px;
+  min-height: 650px;
+  /*max-width: 500px;*/
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+
+
+#navvertical  {
+  margin-top: 0px;
+  min-height: 950px;
+  min-width: 230px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #c3d7f0;
+  padding-top: 5px;
+  padding-left: 45px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+
+#graph-container {
+  margin-top: 0px;
+  min-height: 350px;
+  min-width: 1000px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+#metrictable-container {
+  margin-top: 0px;
+  max-height: 370px;
+  min-height: 370px;
+  display:block;
+  height: 100%;
+  overflow: auto;
+  min-width: 900px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+#notes-container {
+  margin-top: 0px;
+  min-height: 150px;
+  min-width: 900px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.scrollable {
+  height: 100%;
+  overflow: auto;
+}
+
+.pad40-top {
+  padding-top: 40px;
+}
+
+.max-height {
+  height: 100%;
+}
+
+#patient-summary {
+  margin-top: 0px;
+  min-height: 1250px;
+  /*max-width: 500px;*/
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+#metricsummary-container {
+  margin-top: 0px;
+  min-height: 550px;
+  min-width: 830px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.summarygraph-container {
+  margin-top: 0px;
+  min-height: 350px;
+  min-width: 430px;
+  border-style: solid;
+  border-color: #4cae4c;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 6px;
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+
+  #critical{
+    border-color: red;
+    border-width: 6px;
+  }
+
+  #warning {
+    border-color: yellow;
+    border-width: 6px;
+  }
+}
+
+#patientpic-container {
+  margin-top: 0px;
+  min-height: 250px;
+  min-width: 225px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+#patientinfo-container {
+  margin-top: 0px;
+  min-height: 350px;
+  min-width: 225px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+#medication-container {
+  margin-top: 0px;
+  min-height: 350px;
+  min-width: 225px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 3px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.patientroster-container {
+  margin-top: 0px;
+  min-height: 200px;
+  min-width: 150px;
+  border-style: solid;
+  border-color: #4cae4c;
+  box-shadow: 9px 9px 20px #787878;
+  border-width: 6px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#critical{
+  border-color: red;
+  border-width: 6px;
+}
+
+#warning {
+  border-color: yellow;
+  border-width: 6px;
+}

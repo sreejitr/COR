@@ -1,0 +1,15 @@
+<div class="col-lg-12" id="patient-container">
+  <div style="padding-left: 50px;">
+	<% @patients.in_groups_of(5) do |group| %>
+		<div class="row" style="padding-left: 20px;">
+			<% group.each do |patient| %>	
+				<% if patient != nil %>										
+					<div class="col-md-2 patientroster-container" id="<%= @borders[patient.id] %>" >						
+						<%= render :partial => 'patient/patient', :locals => {:patient => patient} %>
+					</div>
+				<% end %>
+			<% end %>
+		</div>
+	<% end %>
+	</div>
+</div>

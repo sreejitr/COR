@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  date: 2014-04-19 13:47:11
+  minutes_asleep: 1
+  number_of_awakenings: 1
+  sleep_efficiency: 1.5
+  steps: 1
+  sedentary_minutes: 1
+  lightly_active_minutes: 1
+  fairly_active_minutes: 1
+  very_active_minutes: 1
+
+two:
+  patient_id: 1
+  date: 2014-04-19 13:47:11
+  minutes_asleep: 1
+  number_of_awakenings: 1
+  sleep_efficiency: 1.5
+  steps: 1
+  sedentary_minutes: 1
+  lightly_active_minutes: 1
+  fairly_active_minutes: 1
+  very_active_minutes: 1

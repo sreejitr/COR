@@ -1,2 +1,4 @@
-# COR
-COR - Congestive heart failure monitoring application
+cor
+===
+
+Rapid Prototyping Spring 2014 - Cor Web App

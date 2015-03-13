@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  hr_sensor_id: 1
+  heart_rate: 1.5
+  heart_rate_variability: 1.5
+  reading_time: 2014-03-29 19:32:41
+
+two:
+  patient_id: 1
+  hr_sensor_id: 1
+  heart_rate: 1.5
+  heart_rate_variability: 1.5
+  reading_time: 2014-03-29 19:32:41

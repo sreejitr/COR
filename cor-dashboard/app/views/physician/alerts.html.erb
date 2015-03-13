@@ -1,0 +1,13 @@
+<div id="alertsdiv" class="col-sm-12">
+	<h2 class="col-sm-offset-1" style="font-weight: lighter">Alerts and Notifications</h2>
+	<ul>
+		<% @alerts.each do |patientAlerts| %>
+            <p> Alerts for <%= Patient.find(patientAlerts[0]).name %></p>
+            <% patientAlerts[1].each do |a| %>
+			    <li>
+				    <%= render :partial => 'patient/alert', :locals => {alert: a} %>
+			    </li>
+		    <% end %>
+        <% end %>
+	</ul>
+</div>

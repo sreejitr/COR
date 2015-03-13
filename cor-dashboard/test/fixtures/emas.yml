@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  temperature: 1.5
+  sodium_level: MyString
+  quality_of_sleep: MyString
+  reading_time: 2014-03-29 18:42:14
+  created_date: 2014-03-29 18:42:14
+
+two:
+  patient_id: 1
+  temperature: 1.5
+  sodium_level: MyString
+  quality_of_sleep: MyString
+  reading_time: 2014-03-29 18:42:14
+  created_date: 2014-03-29 18:42:14

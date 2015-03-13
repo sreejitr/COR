@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  weight: 1.5
+  hydration: 1.5
+  reading_time: 
+  created_date: 2014-03-29 15:38:08
+  weight_monitor_id: 1
+
+two:
+  patient_id: 1
+  weight: 1.5
+  hydration: 1.5
+  reading_time: 
+  created_date: 2014-03-29 15:38:08
+  weight_monitor_id: 1

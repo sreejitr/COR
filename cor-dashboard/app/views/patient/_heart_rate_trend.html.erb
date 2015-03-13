@@ -1,0 +1,12 @@
+<%= javascript_tag do %>
+    var data = <%= values %>;
+    var thresholdHigh = <%= threshold[:high] %>;
+    var thresholdLow = <%= threshold[:low] %>;
+    data.sort();
+<% end %>
+
+<div id="heart_rate_trend_container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+    $(populate_heart_rate_trend_container());
+</script>
+<% javascript_include_tag "heart_rate_trend"%>

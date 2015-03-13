@@ -1,0 +1,21 @@
+<%= javascript_tag do %>
+	var sed = <%= exercise_log[:sedentary] %>;	
+	var lightly = <%= exercise_log[:lightly_active] %>;
+	var fairly = <%= exercise_log[:fairly_active] %>;
+	var very = <%= exercise_log[:very_active] %>;	
+	var days = new Array();
+	var count = 0;
+	<% exercise_log[:days].each do |d| %>
+		days[count] = "<%= d %>";
+		count += 1;
+	<% end %>	
+	
+<% end %>
+
+<!--h2>Today's Steps: <%= exercise_log[:steps].last %></h2-->
+
+<div id="exercise_log_container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+  $(populate_exercise_log_container());
+</script>
+<% javascript_include_tag "exercise_log"%>

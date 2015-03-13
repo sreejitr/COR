@@ -1,0 +1,13 @@
+<%= javascript_tag do %>
+  var data = <%= values %>;
+  var weightThreshold = <%= threshold[:weight] %>;
+  var timeThreshold = <%= threshold[:time] %>;
+
+  data.sort();
+<% end %>
+
+<div id="weight_container"></div>
+<script>
+  $(populate_weight_container());
+</script>
+<% javascript_include_tag "weight"%>

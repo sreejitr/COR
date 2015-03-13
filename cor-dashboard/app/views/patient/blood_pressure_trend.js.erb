@@ -1,0 +1,1 @@
+$('#graph').html("<%= escape_javascript(render :partial => 'patient/blood_pressure_trend', :locals => {:threshold => @threshold, :values => @values})%>");

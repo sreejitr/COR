@@ -1,0 +1,13 @@
+<%= javascript_tag do %>
+    var heartrateHigh = <%= threshold[:high] %>;
+    var heartrateLow = <%= threshold[:low] %>;
+    var variability = <%= variability %>;
+    var timestamp = <%= values[0] %>;
+    var heartrateReading = <%= values[1] %>;
+<% end %>
+
+<div id="heart_rate_container"></div>
+<script>
+    $(populate_heart_rate_container());
+</script>
+<% javascript_include_tag "heart_rate"%>

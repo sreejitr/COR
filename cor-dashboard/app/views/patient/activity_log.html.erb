@@ -1,0 +1,26 @@
+<div class="col-sm-2 col-sm-offset-1">
+	<div id="metric-nav">
+		<ul>		
+			<li class="text-center btn-default border-r btn-spacing"><%= button_to "Exercise Log", patient_exercise_log_path, :remote => true, class:"btn btn-default w75", method: "get" %>
+			</li>		
+			<li class="text-center btn-default border-r btn-spacing"><%= button_to "Sleep Log", patient_sleep_log_path, :remote => true, class:"btn btn-default w75", method: "get" %>
+			</li>    
+		</ul>
+	</div>	
+</div>
+<div id="metric-nav" class="col-md-8">
+  <h2>Today's Steps: <%= @exercise_log[:steps].last %></h2>
+	<div id="graph">
+		
+	</div>	
+</div>
+<script>
+	$("a").removeClass("active");
+	$("#myactivitylog a").css("padding-bottom","51px");
+	$("#myactivitylog a").css("box-shadow","none");
+	$("#myactivitylog a").css("border-radius","3px 3px 0 0");
+</script>
+
+<script>
+$('#graph').html("<%= escape_javascript(render :partial => 'patient/exercise_log', :locals => {:exercise_log => @exercise_log})%>");
+</script>

@@ -1,0 +1,11 @@
+<%= javascript_tag do %>	
+	var data = <%= values %>;	
+	var threshold = <%= threshold %>;		
+	data.sort();
+<% end %>
+
+<div id="sodium_container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+  $(populate_sodium_container());
+</script>
+<% javascript_include_tag "sodium"%>

@@ -1,0 +1,141 @@
+<% if metric == "weight"%>
+<table class="table" id="weight_tab">
+  <thead>
+  <tr>
+    <th>Reading Time</th>
+    <th>Weight</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% values_weight.each do |i| %>
+      <tr>
+        <% sec = (i[0].to_f / 1000) %>
+        <% datetime = Time.at(sec) %>
+        <th><%=datetime%></th>
+        <th><%= i[1] %></th>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% if metric == "blood_pressure_trend" %>
+<table class="table" id="bloodpressure_tab">
+  <thead>
+  <tr>
+    <th>Reading Time</th>
+    <th>Systolic</th>
+    <th>Diastolic</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for i in 0..values_blood_pressure[:systolic].length - 1 %>
+      <tr>
+        <% sec = (values_blood_pressure[:systolic][i][0].to_f / 1000) %>
+        <% datetime = Time.at(sec) %>
+        <th><%=datetime%></th>
+        <th><%= values_blood_pressure[:systolic][i][1] %></th>
+        <th><%= values_blood_pressure[:diastolic][i][1] %></th>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% if metric == "heart_rate_trend" %>
+<table class="table" id="heartrate_tab">
+  <thead>
+  <tr>
+    <th>Reading Time</th>
+    <th>Heart Rate</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% values_heart_rate.each do |i| %>
+      <tr>
+        <% sec = (i[0].to_f / 1000) %>
+        <% datetime = Time.at(sec) %>
+        <th><%=datetime%></th>
+        <th><%= i[1] %></th>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% if metric == "blood_oxygen" %>
+<table class="table" id="bloodoxygen_tab">
+  <thead>
+  <tr>
+    <th>Reading Time</th>
+    <th>Blood Oxygen %</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% values_blood_oxygen.each do |i| %>
+      <tr>
+        <% sec = (i[0].to_f / 1000) %>
+        <% datetime = Time.at(sec) %>
+        <th><%=datetime%></th>
+        <th><%= i[1] %></th>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% if metric == "activity" %>
+<table class="table" id="activity_tab">
+  <thead>
+  <tr>
+    <th>Day</th>
+    <th>Sedentary minutes</th>
+    <th>Lightly active minutes</th>
+    <th>Fairly active minutes</th>
+    <th>Very active minutes</th>
+    <th>Steps</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for i in 0..(values_activity[:days].length - 1) %>
+    <tr>
+      <th><%= values_activity[:days][i] %></th>
+      <th><%= values_activity[:sedentary][i] %></th>
+      <th><%= values_activity[:lightly_active][i] %></th>
+      <th><%= values_activity[:fairly_active][i] %></th>
+      <th><%= values_activity[:very_active][i] %></th>
+      <th><%= values_activity[:steps][i] %></th>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% if metric == "sodium" %>
+<table class="table" id="sodium_tab">
+  <thead>
+  <tr>
+    <th>Reading Time</th>
+    <th>Sodium</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% values_sodium.each do |i| %>
+      <tr>
+        <% sec = (i[0].to_f / 1000) %>
+        <% datetime = Time.at(sec) %>
+        <th><%=datetime%></th>
+        <% if i[1] == 1 %>
+            <th>Low</th>
+        <% end %>
+        <% if i[1] == 2 %>
+            <th>Medium</th>
+        <% end %>
+        <% if i[1] == 3 %>
+            <th>High</th>
+        <% end %>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<% end %>

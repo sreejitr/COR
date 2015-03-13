@@ -1,0 +1,22 @@
+<div class="col-sm-2 col-sm-offset-1">
+	<div id="metric-nav">
+	<ul>
+		<li class="text-center btn-default border-r btn-spacing"><%= button_to "Summary", patient_health_summary_path, :remote => true, class:"btn btn-default w75", method: "get" %></li>
+		<li class="text-center btn-default border-r btn-spacing"><%= button_to "Weight", patient_weight_path, :remote => true, class:"btn btn-default w75", method: "get" %></li>		
+		<li class="text-center btn-default border-r btn-spacing"><%= button_to "Blood Pressure", patient_blood_pressure_path, :remote => true, class:"btn btn-default w75", method: "get" %></li>
+    <li class="text-center btn-default border-r btn-spacing"><%= link_to "Heart Rate", patient_heart_rate_path, :remote => true, class:"btn btn-default w75", method: "get" %></li>
+		<li class="text-center btn-default border-r btn-spacing"><%= link_to "Blood Oxygen", patient_blood_oxygen_path, :remote => true, class:"btn btn-default w75", method: "get" %></li>
+		<li class="text-center btn-default border-r btn-spacing"><%= link_to "Sodium", patient_sodium_path, :remote => true, class:"btn btn-default w75", method: "get" %></li>
+		</ul>
+	</div>	
+</div>
+<div id="metric-nav" class="col-md-8">
+	<div id="graph">
+		<img src="http://placehold.it/900x400">
+	</div>
+</div>
+
+
+<script>
+   $('#graph').html("<%= escape_javascript(render :partial => 'patient/health_summary', :locals => {:values => @values})%>");
+</script>
